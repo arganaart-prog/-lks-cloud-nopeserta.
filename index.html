@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>contoh</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <table>
+        <tr>
+
+            <td>
+               <form onsubmit="event.preventDefault(); onFormSubmit(event);" autocomplete="off">
+                    <div>
+                        <label>Nama Lengkap</label>
+                        <input type="text" name="Nama Lengkap" id="NamaLengkap">
+                    </div>
+                    <div>
+                        <label>Code Perorangan</label>
+                        <input type="text" name="Code Perorangan" id="CodePerorangan">
+                    </div>
+
+                    <div>
+                        <label>Bayaran</label>
+                        <input type="text" name="Bayaran" id="Bayaran">
+                    </div>
+                    <div>
+                        <label>Kota</label>
+                        <input type="text" name="Kota" id="Kota">
+                    </div>
+                    <div class ="form-action-buttons">
+                        <input type="submit" value="submit">
+                    </div>
+                </form>
+                <td>
+
+                    <table class="list" id="ListPerorangan">
+                        <thead>
+                            <tr>
+                                <th>Nama Lengkap</th>
+                                <th>Code Perorangan</th>
+                                <th>Bayaran</th>
+                                <th>Kota</th>
+                                <th></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+
+                        </tbody>
+                    </table>
+
+                </td>
+            </td>
+        </tr>
+
+    </table>
+</body>
+<script src="script.js"> </script>
+</html>

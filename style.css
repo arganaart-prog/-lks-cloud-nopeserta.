@@ -1,0 +1,117 @@
+/* ===============================
+   RESET
+=============================== */
+* {
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background: #ffffff;
+    margin: 0;
+    padding: 30px;
+}
+
+/* ===============================
+   OUTER CONTAINER (BORDER BESAR)
+=============================== */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    border: 1px solid #dcdcdc;   /* BORDER BESAR LUAR */
+}
+
+/* ===============================
+   CELL LAYOUT
+=============================== */
+td {
+    vertical-align: top;
+    padding: 25px 30px;
+}
+
+/* PEMBATAS TENGAH */
+td:first-child {
+    border-right: 1px solid #dcdcdc;
+    width: 40%;
+}
+
+/* ===============================
+   FORM (KIRI)
+=============================== */
+form {
+    width: 100%;
+}
+
+/* SETIAP BARIS FORM */
+form div {
+    margin-bottom: 18px;
+}
+
+label {
+    display: block;
+    font-size: 14px;
+    color: #000;
+    margin-bottom: 6px;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #dcdcdc;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+/* BUTTON */
+.form-action-buttons {
+    text-align: right;
+    margin-top: 10px;
+}
+
+input[type="submit"] {
+    padding: 10px 24px;
+    background: #e0e0e0;
+    border: 1px solid #cfcfcf;
+    border-radius: 4px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background: #d6d6d6;
+}
+
+/* ===============================
+   TABLE DATA (KANAN)
+=============================== */
+table.list {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+/* HEADER */
+table.list thead th {
+    background: #e0e0e0;
+    padding: 10px;
+    text-align: left;
+    font-size: 14px;
+    border-bottom: 1px solid #cfcfcf;
+}
+
+/* BODY */
+table.list tbody td {
+    padding: 10px;
+    font-size: 14px;
+}
+
+/* GARIS VERTIKAL ANTAR KOLOM TABEL KANAN */
+table.list th,
+table.list td {
+    border-right: 1px solid #dcdcdc;
+}
+
+/* HAPUS GARIS DI KOLOM TERAKHIR */
+table.list th:last-child,
+table.list td:last-child {
+    border-right: none;
+}
